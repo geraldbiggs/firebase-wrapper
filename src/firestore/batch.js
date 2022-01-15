@@ -1,5 +1,5 @@
 import { writeBatch } from "firebase/firestore";
-import { pipe } from "utilities";
+import { pipe } from "fp-utilities";
 
 export const setupBatch = (db) => () => {
   let batchInstance = writeBatch(db);

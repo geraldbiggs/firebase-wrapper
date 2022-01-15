@@ -3,7 +3,7 @@ import {
   deleteField as firebaseDeleteField,
 } from "firebase/firestore";
 import { sanitizeDoc } from "./sanitizeDoc";
-import { pipe } from "utilities";
+import { pipe } from "fp-utilities";
 
 export const basicTransformer = {
   toFirestore: (doc) => {

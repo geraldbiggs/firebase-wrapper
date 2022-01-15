@@ -1,7 +1,7 @@
 import { doc, where } from "firebase/firestore";
 import { docPathDb, collectionPathDb } from "./firestore";
 import { sanitizeDoc } from "./sanitizeDoc";
-import { pipe } from "utilities";
+import { pipe } from "fp-utilities";
 
 export const buildRepo =
   (db) =>
